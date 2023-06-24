@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "deno: run (on current file)",
+      "type": "deno",
+      "command": "run",
+      "args": ["--watch", "${file}"],
+      "problemMatcher": ["$deno"]
+    }
+  ]
+}
