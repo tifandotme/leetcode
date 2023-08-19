@@ -5,7 +5,7 @@
       "label": "deno: run (on current file)",
       "type": "deno",
       "command": "run",
-      "args": ["--watch", "${file}"],
+      "args": ["--quiet", "--watch", "${file}"],
       "problemMatcher": ["$deno"]
     }
   ]
