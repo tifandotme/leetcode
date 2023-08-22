@@ -8,10 +8,10 @@
 function isAnagram(s: string, t: string): boolean {
   if (s.length !== s.length) return false
 
-  return sortEm(s) === sortEm(t)
+  return sortAscending(s) === sortAscending(t)
 }
 
-function sortEm(str: string): string {
+function sortAscending(str: string): string {
   return str.split("").sort().join("")
 }
 // @lc code=end
