@@ -6,9 +6,6 @@
 
 // @lc code=start
 function containsDuplicate(nums: number[]): boolean {
-  // const set = new Set(nums)
-  // return set.size !== nums.length
-
   const set = new Set()
 
   for (let i = 0; i < nums.length; i++) {
@@ -20,6 +17,8 @@ function containsDuplicate(nums: number[]): boolean {
   }
 
   return false
-}
 
+  // const set = new Set(nums)
+  // return set.size !== nums.length
+}
 // @lc code=end
