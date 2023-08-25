@@ -1,6 +1,5 @@
 {
   "recommendations": [
-    "golang.Go",
     "denoland.vscode-deno",
     "LeetCode.vscode-leetcode"
   ]
