@@ -6,14 +6,19 @@
 
 // @lc code=start
 function twoSum(nums: number[], target: number): number[] {
+  const dict = new Map<number, number>()
+
   for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j];
-      }
+    const num = nums[i]
+    const complement = target - num
+
+    if (dict.has(complement)) {
+      return [dict.get(complement)!, i]
     }
+
+    dict.set(num, i)
   }
 
-  return [];
+  return []
 }
 // @lc code=end
