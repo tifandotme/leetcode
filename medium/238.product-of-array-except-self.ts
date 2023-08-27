@@ -2,6 +2,17 @@
  * @lc app=leetcode id=238 lang=typescript
  *
  * [238] Product of Array Except Self
+ * 
+ * Topics: array, prefix/postfix sum
+ * 
+ * 1. Loop through nums from left to right, then assign result[i] = product of previous numbers
+ * 2. Loop through nums from right to left, then assign result[i] *= product of next numbers
+ * 3. First element and last element will be 0, so we need to assign product = 1
+ * 
+ * Time: O(n)
+ * Space: O(1)
+ * 
+ * Reference: Neetcode video
  */
 
 // @lc code=start
