@@ -1,9 +1,0 @@
-{
-  "deno.enable": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
-  "[go]": {
-    "editor.defaultFormatter": "golang.go"
-  }
-}
